@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "cloudflare-workers-discord-template",
+  "name": "acceptance-bot",
   "main": "src/index.js",
   "compatibility_date": "2026-08-18",
   "observability": {
@@ -11,13 +11,13 @@
   },
   "env": {
     "non-prod": {
-      "name": "cloudflare-workers-discord-template-non-prod",
+      "name": "acceptance-bot-non-prod",
       "secrets": {
         "required": ["DISCORD_PUBLIC_KEY", "DISCORD_APPLICATION_ID", "DISCORD_TOKEN"]
       }
     },
     "production": {
-      "name": "cloudflare-workers-discord-template-production",
+      "name": "acceptance-bot-production",
       "secrets": {
         "required": ["DISCORD_PUBLIC_KEY", "DISCORD_APPLICATION_ID", "DISCORD_TOKEN"]
       }
